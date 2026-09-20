@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy — ScanStack</title>
+<style>
+  :root { color-scheme: light dark; --ink:#1b1b1f; --muted:#5a5a66; --bg:#fcfcff; --line:#e3e3ea; --accent:#3a5a8c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e4e2e6; --muted:#a9a8b3; --bg:#131316; --line:#2c2c33; --accent:#afc6ee; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:2rem; margin:0 0 .3em; letter-spacing:-.02em; }
+  h2 { font-size:1.15rem; margin:2.2em 0 .6em; letter-spacing:-.01em; }
+  .meta { color:var(--muted); font-size:.9rem; margin-bottom:2.5em; }
+  p, li { color:var(--ink); }
+  ul { padding-left:1.25em; }
+  li { margin:.4em 0; }
+  .callout { border-left:3px solid var(--accent); background:color-mix(in srgb, var(--accent) 8%, transparent);
+             padding:14px 18px; margin:1.6em 0; border-radius:0 6px 6px 0; }
+  a { color:var(--accent); }
+  footer { margin-top:3.5em; padding-top:1.5em; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.875rem; }
+  code { background:color-mix(in srgb, var(--ink) 8%, transparent); padding:.1em .35em; border-radius:3px; font-size:.9em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Privacy Policy</h1>
+<p class="meta">ScanStack &middot; Last updated 20 September 2026</p>
+
+<div class="callout">
+  <strong>The short version.</strong> ScanStack scans and reads your documents entirely on your
+  phone. Nothing is uploaded unless you sign in and explicitly ask for a backup &mdash; and if you
+  do, the backup is encrypted on your device first, with a password only you know. We cannot read
+  your documents.
+</div>
+
+<h2>Who we are</h2>
+<p>
+  ScanStack is operated by WebVogue. For anything in this policy, contact
+  <a href="mailto:contact@webvogue.in">contact@webvogue.in</a>.
+</p>
+
+<h2>What happens on your device</h2>
+<p>
+  Scanning, edge detection, image enhancement, text recognition (OCR) and document
+  categorisation all run locally on your phone. The text extracted from your documents,
+  the page images, and the categories and titles derived from them are stored only in
+  ScanStack's private storage on your device.
+</p>
+<p>
+  ScanStack does not request camera permission. Capture happens inside Google Play
+  Services' own scanner, which hands ScanStack only the finished pages.
+</p>
+
+<h2>What we collect</h2>
+<p><strong>If you never sign in: nothing.</strong> There is no account, no analytics
+   identifier and no document upload.</p>
+<p>If you choose to sign in with Google, we receive and store:</p>
+<ul>
+  <li>Your Google account identifier and email address, used solely to work out which
+      backup belongs to you.</li>
+  <li>A single encrypted backup file, if and when you ask for one.</li>
+</ul>
+
+<h2>How backups are protected</h2>
+<p>
+  Before anything is uploaded, your documents are packaged and encrypted on your device
+  using AES-256-GCM, with a key derived from a password you choose. That password is never
+  transmitted, never stored, and is not recoverable by us or by Google.
+</p>
+<p>
+  The consequence is deliberate and worth stating plainly: <strong>if you forget your backup
+  password, your backup cannot be recovered by anyone, including us.</strong>
+</p>
+
+<h2>Who your data is shared with</h2>
+<p>
+  We do not sell your data and we do not share it with advertisers or data brokers.
+  Two service providers are involved only where you have opted in:
+</p>
+<ul>
+  <li><strong>Google Play Services</strong> &mdash; provides the on-device scanner and
+      text-recognition models. Document content is processed locally.</li>
+  <li><strong>Google Firebase</strong> (Authentication and Storage) &mdash; stores your
+      account identifier and, if you use cloud backup, your encrypted backup file.</li>
+</ul>
+
+<h2>How long we keep it</h2>
+<p>
+  Your encrypted backup is retained until you replace it, delete it, or delete your account.
+  Deleting your account removes both your backup file and your authentication record.
+  Documents held only on your phone are removed when you delete them or uninstall the app.
+</p>
+
+<h2>Your choices and rights</h2>
+<ul>
+  <li><strong>Use the app without an account.</strong> Every scanning feature works signed out.</li>
+  <li><strong>Delete your account and backup</strong> at any time from
+      <em>Settings &rarr; Delete account</em> in the app. This is immediate and permanent.</li>
+  <li><strong>Export your data</strong> using <em>Back up documents</em>, which writes an
+      encrypted archive to a location you choose.</li>
+  <li><strong>Access, correction or complaint</strong> &mdash; contact us at the address above.</li>
+</ul>
+<p>
+  Depending on where you live you may have rights under the GDPR or India's DPDP Act,
+  including access, correction, erasure and portability. The in-app controls above are
+  designed to let you exercise these directly.
+</p>
+
+<h2>Children</h2>
+<p>
+  ScanStack is not directed at children under 13, and we do not knowingly collect their
+  personal information.
+</p>
+
+<h2>Changes</h2>
+<p>
+  If this policy changes materially we will update the date above and note the change in
+  the app's release notes.
+</p>
+
+<footer>
+  ScanStack &middot; <a href="./terms.html">Terms of Service</a> &middot;
+  <a href="./index.html">Home</a>
+</footer>
+
+</div>
+</body>
+</html>

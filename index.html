@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScanStack — Offline document scanner</title>
+<meta name="description" content="Scan, read and organise documents entirely on your phone. No account required, no uploads.">
+<style>
+  :root { color-scheme: light dark; --ink:#1b1b1f; --muted:#5a5a66; --bg:#fcfcff; --line:#e3e3ea; --accent:#3a5a8c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e4e2e6; --muted:#a9a8b3; --bg:#131316; --line:#2c2c33; --accent:#afc6ee; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:64px 20px 80px; }
+  h1 { font-size:2.6rem; margin:0 0 .2em; letter-spacing:-.03em; }
+  .tag { font-size:1.15rem; color:var(--muted); margin:0 0 2.5em; }
+  h2 { font-size:1.15rem; margin:2.5em 0 .6em; letter-spacing:-.01em; }
+  .grid { display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); margin:2em 0; }
+  .card { border:1px solid var(--line); border-radius:10px; padding:18px; }
+  .card h3 { margin:0 0 .4em; font-size:1rem; }
+  .card p { margin:0; color:var(--muted); font-size:.94rem; }
+  a { color:var(--accent); }
+  footer { margin-top:4em; padding-top:1.5em; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.875rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>ScanStack</h1>
+<p class="tag">An offline document scanner. Everything stays on your phone.</p>
+
+<p>
+  Point your camera at a receipt, invoice, ID or contract. ScanStack finds the edges,
+  straightens the page, reads the text, and files it by type &mdash; all on your device.
+  No account needed, nothing uploaded.
+</p>
+
+<div class="grid">
+  <div class="card">
+    <h3>On-device OCR</h3>
+    <p>Text is extracted locally, so your documents never need to leave the phone to become searchable.</p>
+  </div>
+  <div class="card">
+    <h3>Files itself</h3>
+    <p>Receipts, invoices, IDs, contracts and notes are recognised automatically. You can always correct it.</p>
+  </div>
+  <div class="card">
+    <h3>Expiry alerts</h3>
+    <p>Spots expiry and due dates on IDs, policies and invoices, and flags the ones running out.</p>
+  </div>
+  <div class="card">
+    <h3>Encrypted backup</h3>
+    <p>Optional backups are encrypted on your device with a password only you know, then stored wherever you choose.</p>
+  </div>
+</div>
+
+<h2>Why no account?</h2>
+<p>
+  Because scanning does not need one. Sign-in exists only if you want a cloud copy of your
+  encrypted backup &mdash; and even then, the file is encrypted before it is uploaded, so it
+  cannot be read by us or by anyone storing it.
+</p>
+
+<footer>
+  <a href="./privacy.html">Privacy Policy</a> &middot;
+  <a href="./terms.html">Terms of Service</a> &middot;
+  <a href="mailto:contact@webvogue.in">Contact</a>
+</footer>
+
+</div>
+</body>
+</html>
