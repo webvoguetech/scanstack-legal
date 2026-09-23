@@ -35,9 +35,10 @@
 
 <div class="callout">
   <strong>The short version.</strong> Paperkeep scans and reads your documents entirely on your
-  phone. Nothing is uploaded unless you sign in and explicitly ask for a backup &mdash; and if you
-  do, the backup is encrypted on your device first, with a password only you know. We cannot read
-  your documents.
+  phone. Your documents are never uploaded unless you sign in and explicitly ask for a backup
+  &mdash; and if you do, the backup is encrypted on your device first, with a password only you
+  know. We cannot read your documents. The free version shows ads, served by Google AdMob; ads
+  never see your documents.
 </div>
 
 <h2>Who we are</h2>
@@ -57,10 +58,26 @@
   Paperkeep does not request camera permission. Capture happens inside Google Play
   Services' own scanner, which hands Paperkeep only the finished pages.
 </p>
+<p>
+  Paperkeep does not request access to your photo library either. When you import photos,
+  Android's photo picker gives Paperkeep only the photos you select. Paperkeep copies them
+  into its private storage and processes them on your device, like a scan.
+</p>
 
 <h2>What we collect</h2>
-<p><strong>If you never sign in: nothing.</strong> There is no account, no analytics
-   identifier and no document upload.</p>
+<p><strong>Your documents: never</strong>, unless you ask for an encrypted backup (below).
+   There is no document upload and no analytics identifier of our own.</p>
+<p><strong>Ads.</strong> The free version shows ads from Google AdMob. To serve and measure
+   them, the AdMob SDK collects your device's advertising ID, approximate location derived
+   from your IP address, and basic device and interaction information, as described in
+   <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps
+   that use its services</a>. Where the law requires it (for example in the EEA, the UK and
+   Switzerland) you are asked for consent first, and you can change your choice at any time in
+   <em>Settings &rarr; Ad privacy choices</em>. You can also reset or delete your advertising ID
+   in your phone's settings. Ads never receive document images, text, titles or categories.</p>
+<p><strong>Crash reports.</strong> If the app crashes, Google Firebase Crashlytics receives a
+   crash report: the error, your device model, Android version and app version. Crash reports
+   never include document content, titles, text or file names, and are deleted after 90 days.</p>
 <p>If you choose to sign in with Google, we receive and store:</p>
 <ul>
   <li>Your Google account identifier and email address, used solely to work out which
@@ -81,14 +98,17 @@
 
 <h2>Who your data is shared with</h2>
 <p>
-  We do not sell your data and we do not share it with advertisers or data brokers.
-  Two service providers are involved only where you have opted in:
+  We do not sell your data and we do not share your documents with anyone. These service
+  providers are involved:
 </p>
 <ul>
   <li><strong>Google Play Services</strong> &mdash; provides the on-device scanner and
       text-recognition models. Document content is processed locally.</li>
-  <li><strong>Google Firebase</strong> (Authentication and Storage) &mdash; stores your
-      account identifier and, if you use cloud backup, your encrypted backup file.</li>
+  <li><strong>Google Firebase</strong> (Authentication and Storage) &mdash; only if you sign in:
+      stores your account identifier and, if you use cloud backup, your encrypted backup file.</li>
+  <li><strong>Google AdMob</strong> &mdash; serves the ads in the free version, as described
+      above.</li>
+  <li><strong>Google Firebase Crashlytics</strong> &mdash; receives crash reports.</li>
 </ul>
 
 <h2>How long we keep it</h2>
@@ -101,6 +121,8 @@
 <h2>Your choices and rights</h2>
 <ul>
   <li><strong>Use the app without an account.</strong> Every scanning feature works signed out.</li>
+  <li><strong>Control ad personalisation</strong> in <em>Settings &rarr; Ad privacy choices</em>
+      (where required) and through your phone's advertising ID settings.</li>
   <li><strong>Delete your account and backup</strong> at any time from
       <em>Menu (&#9776;) &rarr; Profile &rarr; Delete account</em> in the app. This is immediate and permanent.</li>
   <li><strong>Export your data</strong> using <em>Back up documents</em>, which writes an
